@@ -1,0 +1,8 @@
+services:
+  nexus-xyz-cli:
+    container_name: nexus-xyz-cli
+    image: nexus-xyz-cli:latest
+    restart: unless-stopped
+    stop_grace_period: 5m
+    environment:
+      - PROVER_ID=24967009
